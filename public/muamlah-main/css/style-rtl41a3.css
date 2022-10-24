@@ -1,0 +1,326 @@
+/*
+Theme Name: Twenty Twenty child
+Text Domain: twentytwenty
+Version: 1.6
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Theme URI: https://wordpress.org/themes/twentytwenty/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+	0. 	CSS Reset
+	1. 	Document Setup
+	2. 	Element Base
+	3. 	Helper Classes
+	4. 	Site Header
+	5. 	Menu Modal
+	6. 	Search Modal
+	7. 	Page Templates
+		a. 	Template: Cover Template
+		c. 	Template: Full Width
+	8.  Post: Archive
+	9.  Post: Single
+	10. Blocks
+	11. Entry Content
+	12. Comments
+	13. Site Pagination
+	14. Error 404
+	15. Widgets
+	16. Site Footer
+	17. Media Queries
+
+----------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------- */
+
+
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*	3. Helper Classes
+/* -------------------------------------------------------------------------- */
+
+*, html, body , .handwriting{
+    font-family: 'Avenir Arabic', sans-serif;
+    font-weight: normal !important;
+     font-style: normal !important;
+}
+.elementor-element.elementor-element-51e86676 .wpb-counter-number .counter  , .elementor-element.elementor-element-24c6f6de .wpb-counter-number .counter , .elementor-element.elementor-element-a970946 .wpb-counter-number .counter , .elementor-1620 .elementor-element.elementor-element-2c74c415 .wpb-counter-number .counter {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+
+}
+h1, h2, h3, h4, h5, h6,.herotitle,.typed-words.home, .herotyped, .large-heading.larger, .nav-menu-button-wrapper .nav-functions a.button.dark.w-button, .nav-link .row.no-wrap > div, nav a.nav-link.w-nav-link, *[dir="rtl"] .herobuttonsfloatinglabel-copy, .herobuttondivb a.button.dark.main.w-button{
+  font-family: 'Avenir Arabic', sans-serif;
+  font-weight: bold !important;
+    font-style: normal !important;
+}
+.rtl .wpml-ls-legacy-dropdown .wpml-ls-flag+span, .utility_login_button > div, .utility-link.side, .utility-link, .salesnumber > div{font-weight:500 !important;}
+.stickynavbar a.button.line.w-button {
+    font-weight: bold !important;
+}
+*[dir="rtl"] a.salesnumber.w-inline-block {
+    direction: ltr;
+}
+
+*[dir="rtl"] .login_arrow_icon {
+    transform: rotate(180deg);
+}
+*[dir="rtl"] .regionlangdropdown.w-dropdown {
+    margin-right: auto;
+    margin-left: 12px;
+}
+*[dir="rtl"] .heroimage {
+    left: 0;
+    right: auto;
+}
+*[dir="rtl"] .bold-text-2 {
+    font-weight: 700 !important;
+}
+*[dir="rtl"] h1.servicestabs {
+    font-weight: normal !important;
+}
+*[dir="rtl"] .herobutton.center,*[dir="rtl"] .herobutton.right,*[dir="rtl"] .herobutton.left {
+    padding-left: 0;
+    padding-right: 30px;
+}
+*[dir="rtl"] .herobuttonsfloatinglabel-copy {
+    right: 30px;
+    left: auto;
+}
+*[dir="rtl"] .herobutton_imagedev.nexgo {
+    left: 0%;
+    right: auto;
+}
+*[dir="rtl"] .text-link-block-button {
+    margin-right: 10px;
+}
+*[dir="rtl"] .makeactiontitle.arrow {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+*[dir="rtl"] .rtl.page-template-partner .article.w-richtext {
+    text-align: right;
+    direction: rtl;
+}
+*[dir="rtl"] .rtl.page-template-partner .content-width-medium {
+    direction: rtl;
+}
+*[dir="rtl"] .herocontent.product.larger .heroimage.products{
+    left: 0%;
+    right: auto;
+}
+*[dir="rtl"] img.productphoto {
+    left: auto;
+    right: 0%;
+}
+*[dir="rtl"] .w-dropdown-list {
+    direction: rtl;
+    text-align: right;
+}
+*[dir="rtl"] a.dropdown-link.w-dropdown-link{
+	text-align: right;
+}
+*[dir="rtl"] .integrotated {direction:ltr;}
+
+*[dir="rtl"] .api_design_box{
+	text-align: right;
+}
+*[dir="rtl"] .api_box_seedocs {
+    left: 20px;
+    right: auto;
+}
+
+*[dir="rtl"] .call-txts {
+    direction: ltr;
+    text-align: right;
+}
+*[dir="rtl"] .justify-column-between.content-width-small {
+    direction: rtl;
+}
+*[dir="rtl"] form.wpcf7-form.init , *[dir="rtl"] .wpcf7 input[type="url"], *[dir="rtl"] .wpcf7 input[type="email"], *[dir="rtl"] .wpcf7 input[type="tel"]{
+	direction: rtl !important;
+}
+*[dir="rtl"] span.wpcf7-list-item-label {
+    margin-right: 13px;
+}
+*[dir="rtl"] ul.link-list.w-list-unstyled, *[dir="rtl"] ul.social-icons-list {
+    padding-right: 0;
+    padding-left: 40px;
+}
+*[dir="rtl"] body > .ht-ctc.ht-ctc-chat.style-4 {
+    left: 0 !important;
+    right: 0 !important;
+}
+/* Layout ------------------------------------ */
+
+.no-margin {
+	margin: 0;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.screen-height {
+	min-height: 100vh;
+}
+
+.admin-bar .screen-height {
+	min-height: calc(100vh - 32px);
+}
+
+@media (max-width: 782px) {
+
+	.admin-bar .screen-height {
+		min-height: calc(100vh - 46px);
+	}
+	*[dir="rtl"] .wpml-ls-legacy-dropdown {
+	     text-align: right;
+	  }
+
+}
+
+@media (max-width: 500px) {
+	*[dir="rtl"] .w-slider-mask .w-slide:nth-child(2) {
+		transform: translateX(343px) !important;
+		-webkit-transform: translateX(343px) !important;
+	}
+}
+@media screen and (max-width: 991px){
+	*[dir="rtl"] .integrotated {direction:rtl;}
+	*[dir="rtl"] .menu-button.w-nav-button {
+	    margin-left: 0;
+	    margin-right: 30px;
+	}
+	*[dir="rtl"] ul.link-list.w-list-unstyled, *[dir="rtl"] ul.social-icons-list {
+    padding-right: 0;
+    padding-left: 0;
+}
+	a.dropdown-link.w-dropdown-link{text-align: right;}
+	nav#w-dropdown-list-3 .dropdown-grid{padding: 10px;}
+}
+
+@media (min-width: 767px) and (max-width: 991px){
+*[dir="rtl"] .w-slider-mask .w-slide:nth-child(2) {
+		transform: translateX(730px) !important;
+		-webkit-transform: translateX(730px) !important;
+}
+*[dir="rtl"] .typed-words {
+    text-align: right;
+}
+*[dir="rtl"] a.herobutton.left.w-inline-block {margin-left: 0;}
+*[dir="rtl"] .w-slider-mask .w-slide img.slider-image {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+.servicestabs {
+    font-size: 1.5em !important;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+*[dir="rtl"] .w-slider-mask .w-slide:nth-child(2) {
+    transform: translateX(462px) !important;
+    -webkit-transform: translateX(462px) !important;
+}
+*[dir="rtl"] a.herobutton.left.w-inline-block {margin-left: 0;}
+*[dir="rtl"] .w-slider-mask .w-slide img.slider-image {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+}
+
+/* Hiding and Showing ------------------------ */
+
+.js .show-js {
+	display: block !important;
+}
+
+.js .hide-js {
+	display: none !important;
+}
+
+.no-js .show-no-js {
+	display: block !important;
+}
+
+.no-js .hide-no-js {
+	display: none !important;
+}
+
+
+.no-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+/* Search Form ------------------------------- */
+
+.search-form {
+	align-items: stretch;
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 0 -0.8rem -0.8rem 0;
+}
+
+.search-form .search-field,
+.search-form .search-submit {
+	margin: 0 0.8rem 0.8rem 0;
+}
+
+.search-form label {
+	align-items: stretch;
+	display: flex;
+	font-size: inherit;
+	margin: 0;
+	width: 100%;
+}
+
+.search-form .search-field {
+	width: 100%;
+}
+
+.search-form .search-submit {
+	flex-shrink: 0;
+}
+
+.search-form .search-submit:focus,
+.search-form .search-submit:hover {
+	text-decoration: none;
+}
+.partnerwrapper .paragraph.greyish {text-align: right;}
+.elementor-element.elementor-element-51e86676 .wpb-counter-number .counter {
+    font-family: "Montserrat", Sans-serif !important;
+
+}

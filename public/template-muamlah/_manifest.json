@@ -1,0 +1,29 @@
+{
+  "version": "3.0",
+  "comment": "---Above version must be the same as data-pwa-version",
+  "comment": "---data-pwa-version can be found in index.html in the manifest tag",
+  "comment": "---if versions are not the same it will cause an update loop",
+  "lang": "ar",
+  "name": "منصة معاملة . كوم",
+  "scope": "/",
+  "display": "fullscreen",
+  "start_url": "home.html",
+  "short_name": "muamlah",
+  "description": "",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "generated": "true",
+  "icons": [
+    {
+      "src": "app/icons/icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "app/icons/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

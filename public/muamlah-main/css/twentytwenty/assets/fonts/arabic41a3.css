@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Avenir Arabic';
+    src: url('AvenirArabic-Black.woff2') format('woff2'),
+        url('AvenirArabic-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Arabic';
+    src: url('AvenirArabic-Black.woff2') format('woff2'),
+        url('AvenirArabic-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Arabic';
+    src: url('AvenirArabic-Book.woff2') format('woff2'),
+        url('AvenirArabic-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Arabic';
+    src: url('AvenirArabic-Book.woff2') format('woff2'),
+        url('AvenirArabic-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Arabic';
+    src: url('AvenirArabic-Heavy.woff2') format('woff2'),
+        url('AvenirArabic-Heavy.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Arabic';
+    src: url('AvenirArabic-Heavy.woff2') format('woff2'),
+        url('AvenirArabic-Heavy.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Arabic';
+    src: url('AvenirArabic-Regular.eot');
+    src: url('AvenirArabic-Regulard41d.eot?#iefix') format('embedded-opentype'),
+        url('AvenirArabic-Regular.woff2') format('woff2'),
+        url('AvenirArabic-Regular.woff') format('woff'),
+        url('AvenirArabic-Regular.ttf') format('truetype'),
+        url('AvenirArabic-Regular.svg#AvenirArabic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Arabic';
+    src: url('AvenirArabic-Medium.woff2') format('woff2'),
+        url('AvenirArabic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir Arabic';
+    src: url('AvenirArabic-Medium.woff2') format('woff2'),
+        url('AvenirArabic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
